@@ -1,0 +1,97 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #222; */
+  height: 90vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.background-container {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    margin-top: 31.25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.background-item {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://source.unsplash.com/random/500×500/?faces");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+.grid-container {
+  position: absolute;
+  display: grid;
+}
+
+.box {
+  top: 0px;
+}
+.box-color {
+  background: blue;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border: 1px solid #ccc;
+
+}
+
+
+.fall {
+  top: 550px;
+  background: #001475;
+  animation: fallDown 2s linear;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes fallDown {
+  0% {
+    transform: rotateX(0deg);
+  }
+  20% {
+    transform: rotateX(45deg);
+    background: #001475;
+  }
+  40% {
+    transform: rotateX(90deg);
+    background: #001475;
+  }
+  60% {
+    transform: rotateX(135deg);
+    background: blue
+  }
+  80% {
+    transform: rotateX(180deg);
+    background: blue;
+  }
+  100% { 
+    top: 650px;
+    background: #001475;
+    transform: rotateX(90deg);
+  }  
+}
